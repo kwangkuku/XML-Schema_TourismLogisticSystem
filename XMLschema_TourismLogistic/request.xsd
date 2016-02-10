@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:complexType name="personalProfile ">
+    <xs:sequence>
+      <xs:element name ="name" type ="xs:string"/>
+      <xs:element name ="picture" type ="xs:string"/>
+      <xs:element name ="age" type ="xs:positiveInteger"/>
+      <xs:element name ="sex">
+        <xs:simpleType>
+          <xs:restriction base ="xs:string">
+            <xs:enumeration value ="male"/>
+            <xs:enumeration value="female"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+ 
+  <xs:element name ="request">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="callerProfile" type="personalProfile ">
+        </xs:element>
+
+        <xs:element name ="noPassengers" type ="xs:positiveInteger"/>
+        
+        <xs:element name ="vehiclePrefer ">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value ="car"/>
+              <xs:enumeration value="van"/>
+              <xs:enumeration value="bus"/>
+              <xs:enumeration value="boat"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name ="pickupLocation ">
+          <xs:complexType>
+            <xs:attribute name="latitude " use="required"/>
+            <xs:attribute name="longitude " use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name ="destinationLocation ">
+          <xs:complexType>
+            <xs:attribute name="latitude " use="required"/>
+            <xs:attribute name="longitude " use="required"/>
+          </xs:complexType>
+        </xs:element>
+        
+        <xs:element name ="pickupTime " type ="xs:string"/>
+        
+        <xs:element name ="specialRequest " type ="xs:string"/>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<request>
+  <callerProfile>
+    <name>
+      Kwanrudee  Klebkaew
+    </name>
+    <picture>
+      pic1
+    </picture>
+    <age>
+      20
+    </age>
+    <sex>male</sex>
+  </callerProfile>
+  <noPassengers>
+    300
+  </noPassengers>
+  <vehiclePrefer>van</vehiclePrefer>
+  <pickupLocation latitude="30" longitude="50"></pickupLocation>
+  <destinationLocation latitude="50" longitude="30"></destinationLocation>
+  <pickupTime>2</pickupTime>
+  <specialRequest>none</specialRequest>
+</request>
