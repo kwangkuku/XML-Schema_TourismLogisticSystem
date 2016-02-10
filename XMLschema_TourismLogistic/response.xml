@@ -1,5 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <response>
-  
+  <driverProfile>
+    <name>
+      Kwangkuku
+    </name>
+    <picture>
+      picture
+    </picture>
+    <age>
+      25
+    </age>
+    <sex>female</sex>
+  </driverProfile>
+  <vehicleDetail>
+    <vehicleType>van</vehicleType>
+    <vehicleNo>1234</vehicleNo>
+    <vehiclePicture>picture</vehiclePicture>
+    <vehicleSeatNo>300</vehicleSeatNo>
+  </vehicleDetail>
+  <currentDriverPosition latitude="126" longitude="789"></currentDriverPosition>
+  <waitingTime>10</waitingTime>
+  <costEstimate>2000</costEstimate>
 </response>
-
